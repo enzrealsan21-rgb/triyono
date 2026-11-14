@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d1c">
+<meta name="description" content="TRIYONO AI - asisten kecerdasan buatan untuk belajar, berkarya, dan mencari ide.">
+<title>TRIYONO AI — Your AI Workspace</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">✦</span><span>TRIYONO <b>AI</b></span></a>
+  <nav class="nav"><a href="#home">Beranda</a><a href="#features">Fitur</a><a href="#about">Tentang</a></nav>
+  <div class="top-actions"><span id="navUser" class="nav-user"></span><button id="loginOpen" class="btn btn-ghost">Masuk</button><button id="registerOpen" class="btn btn-primary">Daftar gratis</button><button id="logoutBtn" class="btn btn-ghost hidden">Keluar</button></div>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> RUANG KERJA KECERDASAN BUATAN</div>
+    <h1>Ide besar dimulai<br>bersama <span>TRIYONO AI.</span></h1>
+    <p class="hero-desc">Asisten digital untuk mengeksplorasi ide, memahami pelajaran, menyusun tulisan, dan mengembangkan kreativitas.</p>
+    <div class="hero-actions"><button class="btn btn-primary btn-large" id="heroStart">Mulai sekarang <span>↗</span></button><a class="btn btn-ghost btn-large" href="#features">Jelajahi fitur</a></div>
+    <div class="trust-line"><span>✦</span> Belajar lebih cerdas · Berkarya lebih luas</div>
+  </div>
+  <div class="hero-art">
+    <div class="orb"><div class="orb-core">✦</div><i class="orbit orbit-one"></i><i class="orbit orbit-two"></i><i class="orbit orbit-three"></i></div>
+    <div class="float-card card-top"><span class="mini-icon">✧</span><div><b>AI Assistant</b><small>Siap membantu ide kamu</small></div><span class="online-dot"></span></div>
+    <div class="float-card card-bottom"><span class="mini-icon purple">⌘</span><div><b>Smart workspace</b><small>Satu tempat untuk berkarya</small></div></div>
+  </div>
+</section>
+
+<section id="features" class="section wrap">
+  <div class="section-heading"><div class="eyebrow">APA YANG BISA DILAKUKAN?</div><h2>Satu asisten, banyak kemungkinan.</h2><p>Fitur yang dirancang untuk mendukung aktivitas digitalmu.</p></div>
+  <div class="feature-grid">
+    <article class="feature"><div class="feature-icon blue">✧</div><h3>AI Assistant</h3><p>Diskusikan pertanyaan dan dapatkan bantuan dari asisten AI.</p></article>
+    <article class="feature"><div class="feature-icon violet">▤</div><h3>AI Learning</h3><p>Pelajari konsep, rangkum materi, dan cari ide untuk tugas.</p></article>
+    <article class="feature"><div class="feature-icon cyan">⌘</div><h3>Creative Studio</h3><p>Kembangkan gagasan, konsep konten, dan inspirasi desain.</p></article>
+    <article class="feature"><div class="feature-icon pink">◷</div><h3>Riwayat Chat</h3><p>Percakapan tersimpan di akun agar mudah dibuka kembali.</p></article>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="wrap about-inner"><div><div class="eyebrow">TENTANG PLATFORM</div><h2>Teknologi untuk<br><span>masa depan.</span></h2></div><p>TRIYONO AI adalah proyek platform asisten digital. Gunakan teknologi dengan bijak: periksa kembali informasi penting, jangan bagikan kata sandi atau data pribadi, dan ingat bahwa jawaban AI bisa saja keliru.</p></div>
+</section>
+
+<section id="workspace" class="workspace-section">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">AI WORKSPACE</div><h2>Tempat ide kamu berkembang.</h2><p>Masuk untuk mulai chat dan menyimpan riwayat percakapan.</p></div>
+    <div id="workspaceGate" class="gate-panel"><div class="gate-icon">✦</div><h3>Masuk ke ruang AI kamu</h3><p>Buat akun atau masuk untuk menggunakan asisten dan melihat riwayat chat.</p><button class="btn btn-primary" id="gateRegister">Buat akun gratis</button></div>
+    <div id="appPanel" class="app-panel hidden">
+      <aside class="sidebar"><div class="side-head"><b>Riwayat chat</b><button id="newChat" class="icon-btn" title="Chat baru">＋</button></div><div id="historyList" class="history-list"></div><div class="side-foot"><span class="avatar" id="avatar">T</span><div><b id="sideName">Pengguna</b><small id="sideRole">Akun pengguna</small></div></div></aside>
+      <div class="chat-area"><div class="chat-top"><div><b>TRIYONO AI Assistant</b><small><span class="online-dot"></span> Terhubung ke ruang kerja</small></div><button id="clearChat" class="btn btn-ghost btn-small">Hapus chat</button></div>
+        <div id="chatMessages" class="chat-messages"><div class="welcome-message"><div class="welcome-symbol">✦</div><h3>Ada yang bisa saya bantu?</h3><p>Tanyakan sesuatu, jelajahi ide, atau mulai dari salah satu contoh berikut.</p><div class="prompt-chips"><button data-prompt="Jelaskan kecerdasan buatan dengan bahasa sederhana.">Jelaskan tentang AI</button><button data-prompt="Bantu saya membuat rencana belajar yang teratur.">Buat rencana belajar</button><button data-prompt="Berikan 5 ide proyek teknologi sederhana.">Cari ide proyek</button></div></div></div>
+        <form id="chatForm" class="composer"><textarea id="chatInput" rows="1" maxlength="4000" placeholder="Tulis pesan untuk TRIYONO AI..." required></textarea><button class="send-btn" type="submit" aria-label="Kirim pesan">↑</button><div class="composer-note">AI dapat membuat kesalahan. Periksa kembali informasi penting.</div></form>
+      </div>
+    </div>
+    <div id="adminPanel" class="admin-panel hidden"><div class="admin-heading"><div><div class="eyebrow">ADMINISTRATOR</div><h3>Ringkasan platform</h3></div><button id="refreshAdmin" class="btn btn-ghost btn-small">Muat ulang</button></div><div class="stats-grid"><div class="stat"><small>Total pengguna</small><strong id="statUsers">0</strong></div><div class="stat"><small>Percakapan</small><strong id="statChats">0</strong></div><div class="stat"><small>Pesan tersimpan</small><strong id="statMessages">0</strong></div></div><div class="users-table-wrap"><table><thead><tr><th>Nama</th><th>Email</th><th>Peran</th><th>Bergabung</th></tr></thead><tbody id="usersTable"></tbody></table></div></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">✦</span><span>TRIYONO <b>AI</b></span></a><p>Innovation for a smarter future.</p><small>© <span id="year"></span> TRIYONO AI. Dibuat sebagai proyek pembelajaran.</small></div></footer>
+
+<div id="authModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal-backdrop" data-close></div><div class="modal-card"><button class="modal-close" data-close aria-label="Tutup">×</button><div class="modal-brand">✦ TRIYONO AI</div><h2 id="authTitle">Selamat datang</h2><p id="authSubtitle">Masuk untuk membuka ruang kerja AI kamu.</p><form id="authForm"><label id="nameField" class="hidden">Nama<input id="authName" autocomplete="name" maxlength="60"></label><label>Email<input id="authEmail" type="email" autocomplete="email" required></label><label>Kata sandi<input id="authPassword" type="password" minlength="10" autocomplete="current-password" required></label><p class="form-hint">Gunakan kata sandi minimal 10 karakter. Jangan gunakan kata sandi yang sama dengan akun penting lainnya.</p><div id="authError" class="error-text"></div><button id="authSubmit" class="btn btn-primary btn-full" type="submit">Masuk</button></form><p class="switch-auth"><span id="switchText">Belum punya akun?</span> <button id="switchAuth" class="link-btn">Daftar</button></p></div></div>
+<div id="toast" class="toast hidden"></div>
+<script src="/app.js" defer></script>
+</body></html>
